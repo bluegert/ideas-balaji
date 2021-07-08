@@ -15,7 +15,7 @@ class navbar extends HTMLElement {
     <a href="/">Home</a>
     <a href="https://balajis.com/content-archive/" target="_blank">Content Archive</a>
     <a href="https://balajis.com/about/" target="_blank">About Balaji</a>
-    <a class="social" aria-hidden="true" href="https://github.com/balajiwiki/balajiwiki.github.io" target="_blank">
+    <a class="social" aria-hidden="true" href="https://github.com/ideas-balaji/ideas-balaji" target="_blank">
     <i class="fa fa-github" style="color:black"></i> 
     </a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -25,7 +25,6 @@ class navbar extends HTMLElement {
     `
   }
 }
-https://github.com/balajiwiki/balajiwiki.github.io
 customElements.define('navbar-template', navbar);
 
 var coll = document.getElementsByClassName("collapsible");

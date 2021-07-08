@@ -1,0 +1,148 @@
+/* Page layout */
+body, html {
+    margin: 0;
+    background-color: F7F7F7;
+    color: black;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.strong {
+  font-weight: 20;
+}
+
+/* Navigation bar */
+.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  top: 0;
+  z-index: 2;
+  font-family: 'Raleway', sans-serif;
+  border-bottom: 1px solid;
+  border-bottom-color: black;
+}
+
+/* Text */
+p { 
+  word-break: normal;
+  white-space: normal;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 80%;
+  text-align: justify;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+a:link {
+  font-weight: bold;
+}
+
+a:visited {
+  color:#505050;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+li {
+  list-style-type: circle;
+  font-weight: bold;
+}
+
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  position: relative;
+  text-align: center;
+  padding: 14px 16px;
+  opacity: 2;
+  color: #0072B2;
+  text-decoration: none;
+}
+
+.topnav a.title {
+  font-size: 1.2rem;
+  top: -3px;
+}
+
+/* Hover to make link bold and underline text */
+.topnav a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* Nav bar responsiveness */
+.topnav .icon {
+  display: none;
+}
+
+/* Put social media on right side of screen */
+.topnav a.social {
+  float: right;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.centered {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Collapsible */
+.collapsible {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  width: 80%;
+  margin-left: 10%;
+  text-align: left;
+  border: 0.1px solid #2D2D2D;
+}
+
+.active, .collapsible:hover {
+  background-color: white;
+}
+
+.content {
+  padding: 0 18px;
+  overflow: hidden;
+  max-height: 0;
+  width: 80%;
+  margin-left: 10%;
+  transition: max-height 0.2s ease-out;
+}
+
+.collapsible:after {
+  content: '\25BC'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: black;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\25B2"; /* Unicode character for "minus" sign (-) */
+}
+
+.update {
+  font-size: 10px;
+}
